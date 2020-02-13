@@ -34,7 +34,7 @@ const ParentSchema = new Schema({
 		type: String,
 		required: true
 	},
-	date: {
+	createddate: {
 		type: Date,
 		default: Date.now
 	}

@@ -2,31 +2,23 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const TransactionSchema = new Schema({
-	firstname: {
-		type: String,
-		required: true
-	},
-	lastname: {
-		type: String,
-		required: true
-	},
-	dateofbirth: {
+	transactiondate: {
 		type: Date,
 		required: true
 	},
-	phonenumber: {
+	category: {
+		type: String,
+		required: true
+	},
+	description: {
+		type: Date,
+		required: true
+	},
+	amount: {
 		type: Number,
 		required: true
 	},
-    email: {
-		type: String,
-		required: true
-	},
-	password: {
-		type: String,
-		required: true
-	},
-	date: {
+	addeddate: {
 		type: Date,
 		default: Date.now
 	}
