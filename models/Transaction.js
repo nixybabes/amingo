@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const ChildSchema = new Schema({
+const TransactionSchema = new Schema({
 	firstname: {
 		type: String,
 		required: true
@@ -32,5 +32,5 @@ const ChildSchema = new Schema({
 	}
 });
 
-const ChildModel = mongoose.model("children", ChildSchema);
-module.exports = ChildModel;
+const TransactionModel = mongoose.model("transactions", TransactionSchema);
+module.exports = TransactionModel;
